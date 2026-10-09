@@ -1,0 +1,22 @@
+cat > .gitignore <<'EOF'
+# Variáveis de ambiente (NUNCA versionar)
+.env
+.env.*
+!.env.example
+
+# Backups
+backups/
+*.sql
+*.tar.gz
+
+# Docker
+docker-compose.yml.old
+docker-compose.override.yml
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+EOF
